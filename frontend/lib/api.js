@@ -1,4 +1,4 @@
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://teamsync-backend-mq0h.onrender.com";
 function getToken() { if (typeof window === "undefined") return null; return localStorage.getItem("teamsync_token"); }
 async function request(path, options = {}) {
   const token = getToken();
